@@ -1,7 +1,7 @@
-$.index.open();
-//function doClick(e) {
+function doClick(e) {
     alert($.label.text);
-//}
+}
+$.index.open();
 
 var Cloud = require('ti.cloud');
 
@@ -32,8 +32,8 @@ if(!social.isAuthorized()) {
  // Note: share() automatically calls authorize() so an explicit call as above is unnecessary
 social.share({
     message: "Salut, Monde!",
-    success: function(e) {alert('Success!')},
-    error: function(e) {alert('Error!')}
+    success: function(e) {alert('Success!');},
+    error: function(e) {alert('Error!');}
 });
 
 // Deauthorize the application
